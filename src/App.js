@@ -48,8 +48,8 @@ function App() {
       <div className='flex justify-evenly w-1/3 mx-auto'>
         {data&&data.map((item,ind)=>{
           return (<div className='bg-white p-3 border-2 rounded-md shadow-md w-1/4 mx-4' key={ind}>
-            <h1 className='text-lg font-bold text-center'>{item.external}</h1>
-            <img src={item.thumb}  alt="{item.external}" className='h-10 w-10 mx-auto'/>
+            <h1 className='text-base font-bold text-center w-full'>{item.external}</h1>
+            <img src={item.thumb}  alt="{item.external}" className='h-20 w-20 mx-auto'/>
           </div>);
         })}
       </div>
